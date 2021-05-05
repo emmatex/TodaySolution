@@ -1,0 +1,12 @@
+C:\Projects\personal\TodaySolution\Infrastructure\bin\Debug\net5.0\Infrastructure.deps.json
+C:\Projects\personal\TodaySolution\Infrastructure\bin\Debug\net5.0\Infrastructure.dll
+C:\Projects\personal\TodaySolution\Infrastructure\bin\Debug\net5.0\ref\Infrastructure.dll
+C:\Projects\personal\TodaySolution\Infrastructure\bin\Debug\net5.0\Infrastructure.pdb
+C:\Projects\personal\TodaySolution\Infrastructure\obj\Debug\net5.0\Infrastructure.csprojAssemblyReference.cache
+C:\Projects\personal\TodaySolution\Infrastructure\obj\Debug\net5.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\personal\TodaySolution\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Projects\personal\TodaySolution\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfo.cs
+C:\Projects\personal\TodaySolution\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projects\personal\TodaySolution\Infrastructure\obj\Debug\net5.0\Infrastructure.dll
+C:\Projects\personal\TodaySolution\Infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
+C:\Projects\personal\TodaySolution\Infrastructure\obj\Debug\net5.0\Infrastructure.pdb
