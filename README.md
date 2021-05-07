@@ -28,7 +28,7 @@
 
 ### Technology stack
 - DotNetCore API
-- SQL Server (Development)
+- SQL Server
 - Entity Framework Core
 
 ### Projects
