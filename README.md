@@ -1,7 +1,7 @@
 # Today Solution
 
-[![Bintray](https://img.shields.io/badge/license-vmechanics-blue.svg?style=flat-square?maxAge=2592000)]()
-[![Bintray](https://img.shields.io/badge/made%20with-dotnetcore3.1-blue.svg?style=flat-square?maxAge=2592000)]()
+[![Bintray](https://img.shields.io/badge/license-todaysolution-blue.svg?style=flat-square?maxAge=2592000)]()
+[![Bintray](https://img.shields.io/badge/made%20with-dotnetcore5.0-blue.svg?style=flat-square?maxAge=2592000)]()
 
 ## Features
 - Upload Csv 
