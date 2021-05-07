@@ -36,8 +36,9 @@ namespace Infrastructure.Services
                     item.DateOfBirth = Convert.ToDateTime(dr[4]);
                     item.Age = Convert.ToInt32(dr[5]);
                     item.Date = Convert.ToDateTime(dr[6]);
-                    item.DoctorName = dr[6].ToString();
-                    item.Charge = Convert.ToDecimal(dr[6]);
+                    item.DoctorName = dr[7].ToString();
+                   // item.Charge = Convert.ToDecimal(dr[8]);
+                    item.Charge = dr[8].ToString();
 
                     patientList.Add(item);
                 }

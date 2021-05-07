@@ -3,6 +3,7 @@ using Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Infrastructure.Data
@@ -19,21 +20,30 @@ namespace Infrastructure.Data
         public async Task AddAsync(Patient patient)
         {
             await _context.Patients.AddAsync(patient);
+            await SaveChangesAsync();
         }
 
         public async Task AddRangeAsync(List<Patient> patients)
         {
-           await _context.Patients.AddRangeAsync(patients);
+            await _context.Patients.AddRangeAsync(patients);
+            await SaveChangesAsync();
         }
 
-        public async Task<IReadOnlyList<Patient>> GetAsync()
+        public IEnumerable<Patient> GetAsync(int page, int pageSize)
         {
-            return await _context.Patients.ToListAsync();
+            return _context.Patients
+                .AsQueryable().Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .OrderBy(x => x.PatientName)
+                .ThenBy(x => x.DateOfBirth)
+                .ToList();
         }
 
         public async Task<Patient> GetByIdAsync(string id)
         {
-            return await _context.Patients.FirstOrDefaultAsync(x => x.Id == id);
+            return await _context.Patients.SingleOrDefaultAsync(x => x.Id == id);
         }
+
+        public async Task<bool> SaveChangesAsync() => await _context.SaveChangesAsync() > 0;
     }
 }
